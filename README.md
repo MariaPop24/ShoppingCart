@@ -8,7 +8,7 @@
 In the project directory, you can run:
 
 - `npm start`
-<br/> Starts the development server.
+<br/> Starts the development server. Open http://localhost:3000/ to view it in your browser
 - `npm run build`
 <br/> Bundles the app into static files for production.
 - `npm test`
