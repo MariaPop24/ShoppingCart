@@ -1,4 +1,18 @@
 # ShoppingCart created using ReactJs
 
-### Commands used for installing dependencies <br/>
+## Command used for creating the ReactJs app <br/>
 - `npx create-react-app shopping-cart`
+
+## Available Scripts
+
+In the project directory, you can run:
+
+- `npm start`
+<br/> Starts the development server.
+- `npm run build`
+<br/> Bundles the app into static files for production.
+- `npm test`
+<br/> Starts the test runner.
+- `npm run eject`
+<br/> Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
