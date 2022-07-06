@@ -1,4 +1,4 @@
-<h1>ShoppingCart created using ReactJs</h1>
+# ShoppingCart created using ReactJs
 
-<h3>Commands used for installing dependencies</h3>
-### `npx create-react-app shoppingCart`
+### Commands used for installing dependencies <br/>
+- `npx create-react-app shoppingCart`
