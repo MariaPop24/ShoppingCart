@@ -1,10 +1,15 @@
 import React from "react";
+import Header from "./components/Header/Header";
+import ProductsList from "./components/ProductsList/ProductsList";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      App works
+    <div>
+      <Header />
+      <ProductsList />
     </div>
+
   );
 }
 
