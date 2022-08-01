@@ -1,0 +1,33 @@
+@import "../../styles/_global-colors.scss";
+
+img.small {
+  max-height: 8rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid;
+  color: $color-turquoise;
+  border: 0.2rem solid $color-light-grey;
+  border-radius: 0.5rem;
+}
+
+.add-to-cart-button {
+  background-color: $color-turquoise;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  width: 100%;
+  color: $color-dark-grey;
+  transition: 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: $color-pink;
+  color: white;
+}
