@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import "./Cart.scss"
 
 const Cart = (props) => {
@@ -41,11 +40,6 @@ const Cart = (props) => {
 
 
 	</div>
-=======
-
-const Cart = () => {
-	return <div></div>
->>>>>>> f42126e5325459f287d88b73b6b3103341dc9a04
 }
 
 export default Cart;
