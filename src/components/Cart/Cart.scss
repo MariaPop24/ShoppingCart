@@ -1,0 +1,29 @@
+@import "../../styles/global-colors";
+
+.cart {
+  margin: 4rem;
+}
+
+.empty-cart {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $color-turquoise;
+  padding: 4rem;
+  text-align: center;
+  border: 0.2rem solid $color-light-grey;
+  border-radius: 0.5rem;
+  width: 50%;
+}
+
+.empty-cart-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.9rem;
+}
+
+.empty-cart-content {
+  font-size: 0.9rem;
+}
+
+.col-2 {
+  flex: 2;
+}

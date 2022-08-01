@@ -1,0 +1,15 @@
+@import "../../styles/_global-colors.scss";
+
+nav {
+  background-color: $color-dark-grey;
+  color: $color-turquoise;
+  font-weight: bold;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.numberOfItems {
+  background-color: transparent;
+  float: right;
+}
