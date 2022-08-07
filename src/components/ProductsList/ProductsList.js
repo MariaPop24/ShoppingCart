@@ -1,6 +1,6 @@
 import React from "react";
 import Product from "../Product/Product";
-import "./ProductsList.css";
+import "./ProductsList.scss";
 
 const ProductsList = (props) => {
 	const { products, addToCart } = props;

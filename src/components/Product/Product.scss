@@ -12,22 +12,27 @@ img.small {
   margin: 1rem;
   padding: 1rem;
   border: 1px solid;
-  color: $color-turquoise;
-  border: 0.2rem solid $color-light-grey;
-  border-radius: 0.5rem;
+  color: $color-pink;
+  border: 0.2rem solid $color-pink;
 }
 
 .add-to-cart-button {
-  background-color: $color-turquoise;
+  background-color: $color-pink;
   border: none;
-  border-radius: 1rem;
   padding: 0.4rem;
   width: 100%;
-  color: $color-dark-grey;
+  color: white;
   transition: 0.3s;
 }
 
 .add-to-cart-button:hover {
-  background-color: $color-pink;
+  background-color: $color-light-pink;
   color: white;
+}
+
+.product__info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0.5rem 0rem;
 }

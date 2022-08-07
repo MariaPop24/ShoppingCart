@@ -6,8 +6,11 @@ const Product = (props) => {
 
 	return <div className="product">
 		<img className="small" src={product.image} alt={product.name} />
-		<h3>{product.name}</h3>
-		<div>${product.price}</div>
+		<div className="product__info">
+			<h3>{product.name}</h3>
+			<div className="product__price">${product.price}</div>
+		</div>
+
 		<div>
 			<button className="add-to-cart-button" onClick={() => addToCart(product)}>Add To Cart</button>
 		</div>

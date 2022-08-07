@@ -4,7 +4,7 @@ import "./Header.scss";
 const Header = (props) => {
 	return <nav>
 		Simple Shopping Cart using ReactJs
-		<p className="numberOfItems">{props.numberCartItems && <div>{props.numberCartItems}</div>}</p>
+		<div className="numberOfItems">{props.numberCartItems && <div>{props.numberCartItems}</div>}</div>
 
 	</nav>
 }

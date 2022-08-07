@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header/Header";
 import ProductsList from "./components/ProductsList/ProductsList";
 import data from "./data";
-import "./App.css";
+import "./App.scss";
 import Cart from "./components/Cart/Cart";
 
 const App = () => {
@@ -17,6 +17,7 @@ const App = () => {
     } else {
       setCartItems([...cartItems, { ...product, quantity: 1 }])
     }
+    console.log("!!!!!")
   }
 
   const removeFromCart = (product) => {
