@@ -17,7 +17,6 @@ const App = () => {
     } else {
       setCartItems([...cartItems, { ...product, quantity: 1 }])
     }
-    console.log("!!!!!")
   }
 
   const removeFromCart = (product) => {

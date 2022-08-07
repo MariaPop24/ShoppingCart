@@ -3,47 +3,56 @@ import "./Cart.scss"
 
 const Cart = (props) => {
 	const { cartItems, addToCart, removeFromCart } = props;
-	const totalPrice = cartItems.reduce((a, c) => a + c.price * c.quantity, 0);
+	const totalPrice = cartItems.reduce((total, current) => total + current.price * current.quantity, 0);
+	const numberOfProducts = cartItems.reduce((total, current) => total += current.quantity, 0)
 
-	return <aside>
+	return (
 		<div className="cart">
-			{cartItems.length === 0 ?
+			{cartItems.length === 0 &&
 				(<div className="empty-cart">
 					<div className="empty-cart-title">Cart is empty</div>
 					<div className="empty-cart-content">
 						Looks like you haven't added any prodicts to your cart yet.
 					</div>
-				</div>) : cartItems.map((item) => {
-					console.log(item);
-					<div>ddaaaaaaaaaaaaaaaaaaadd</div>
-					// <div key={item.id}>
-					// 	{console.log(item)}
-					// 	<div className="col-2">{item.name}</div>
-					// 	<div className="col-2">
-					// 		<button onClick={() => removeFromCart(item)} className="remove">
-					// 			-
-					// 		</button>{' '}
-					// 		<button onClick={() => addToCart(item)} className="add">
-					// 			+
-					// 		</button>
-					// 	</div>
-
-					// 	<div className="col-2 text-right">
-					// 		{item.quantity} x ${item.price.toFixed(2)}
-					// 	</div>
-					// 	<div className="col-2">
-					// 		<strong>Total Price: {totalPrice}</strong>
-					// 	</div>
-					// </div>
-				})}
-
-
-
-
-
-		</div>
-	</aside>
-
+				</div>)}
+			<div className="shoppingcart">
+				{cartItems.length > 0 && cartItems.map((item, index) => (
+					<div key={index} className="shoppingcart__item">
+						<img
+							className="shoppingcart__item--image"
+							src={item.image}
+							alt={item.name} />
+						<div>
+							<div className="shoppingcart__item--title">{item.name}</div>
+							<div className="shoppingcart__item--price">
+								Subtotal: {(item.quantity * item.price).toFixed(2)}
+							</div>
+							<div className="shoppingcart__item--quantity">
+								<button onClick={() => removeFromCart(item)} className="shoppingcart__item--buttons">
+									-
+								</button>
+								<div>{item.quantity}</div>
+								<button onClick={() => addToCart(item)} className="shoppingcart__item--buttons">
+									+
+								</button>
+							</div>
+						</div>
+					</div>
+				))}
+			</div>
+			{cartItems.length > 0 &&
+				<div>
+					<div className="total-price">
+						<span>Total: </span>
+						<span className="total-price--number-of-products">
+							{numberOfProducts} produse
+						</span>
+						<span className="total-price--value">
+							{totalPrice.toFixed(2)}$
+						</span>
+					</div>
+				</div>}
+		</div>)
 }
 
 export default Cart;

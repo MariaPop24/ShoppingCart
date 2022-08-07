@@ -2,21 +2,37 @@
 
 .cart {
   margin: 4rem;
+  border: 0.2rem solid $color-pink;
+  padding: 1rem;
+  padding-bottom: 0;
+  color: $color-pink;
+  width: 50%;
+  height: 20%;
+}
+
+.shoppingcart {
+  overflow-y: scroll;
+  max-height: 15rem;
+  scrollbar-width: none;
+}
+
+.shoppingcart::-webkit-scrollbar {
+  display: none;
 }
 
 .empty-cart {
   font-family: Arial, Helvetica, sans-serif;
   color: $color-pink;
-  padding: 4rem;
   text-align: center;
-  border: 0.2rem solid $color-pink;
+  margin: 4rem;
+  padding: 1rem;
+  color: $color-pink;
   width: 50%;
 }
 
 .empty-cart-title {
   font-weight: bold;
   font-size: 1.5rem;
-  padding: 0.9rem;
 }
 
 .empty-cart-content {
@@ -25,4 +41,91 @@
 
 .col-2 {
   flex: 2;
+}
+
+.shoppingcart__item {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border-bottom: 0.05rem solid $color-pink;
+  margin: 0;
+  padding: 0.4rem 0rem;
+}
+
+.shoppingcart__button {
+  background-color: $color-light-pink;
+  color: $color-pink;
+  font-size: 1rem;
+  border: none;
+  text-align: center;
+  padding: 0.75rem;
+  margin: 0.5rem 0 0.5rem 0;
+  width: 100%;
+}
+
+.shoppingcart__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.9rem;
+  max-width: rem;
+}
+
+.shoppingcart__item--image {
+  height: 6rem;
+  width: 6rem;
+  margin-right: 0.5rem;
+  border: none;
+}
+
+.shoppingcart__item--title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.shoppingcart__item--quantity {
+  display: grid;
+  grid-template-columns: 1.87rem 2.5rem 1.87rem;
+  grid-template-rows: 2.5rem;
+  align-items: center;
+  padding: 0.5rem 0 0;
+  text-align: center;
+}
+
+.shoppingcart__item--buttons {
+  background-color: $color-pink;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  text-align: center;
+  padding: 0rem;
+  width: 1.87rem;
+  height: 1.87rem;
+  transition: 0.3s;
+}
+
+.shoppingcart__item--buttons:hover {
+  background-color: $color-light-pink;
+}
+
+.shoppingcart__item--price {
+  margin-top: 0.25rem;
+}
+
+.total-price {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-top: 0.1rem solid $color-pink;
+  padding: 0.5rem;
+  width: 95.3%;
+}
+
+.total-price--number-of-products {
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.total-price--value {
+  float: right;
 }
