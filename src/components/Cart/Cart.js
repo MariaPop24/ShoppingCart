@@ -51,7 +51,7 @@ const Cart = (props) => {
 							{totalPrice.toFixed(2)}RON
 						</span>
 					</div>
-					<button className="checkout-button" />
+					<button className="checkout-button">Go To Checkout</button>
 				</div>}
 		</div>)
 }

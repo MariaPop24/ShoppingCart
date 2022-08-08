@@ -118,7 +118,7 @@
   border: none;
   border-top: 0.1rem solid $color-pink;
   padding: 0.5rem;
-  width: 95.3%;
+  width: 95.6%;
 }
 
 .total-price--number-of-products {
@@ -128,4 +128,20 @@
 
 .total-price--value {
   float: right;
+}
+
+.checkout-button {
+  background-color: $color-pink;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  transition: 0.3s;
+  margin: 0.5rem 0 0.5rem 0;
+  width: 100%;
+}
+
+.checkout-button:hover {
+  background-color: $color-light-pink;
 }
