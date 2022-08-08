@@ -1,3 +1,8 @@
 .products-list {
   margin: 3rem;
 }
+
+.row {
+  display: grid;
+  grid-template-columns: 16rem 16rem 16rem;
+}

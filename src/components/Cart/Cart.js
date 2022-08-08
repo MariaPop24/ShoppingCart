@@ -23,7 +23,7 @@ const Cart = (props) => {
 							src={item.image}
 							alt={item.name} />
 						<div>
-							<div className="shoppingcart__item--title">{item.name}</div>
+							<div className="shoppingcart__item--title">{(item.name).slice(0, 25)} ...</div>
 							<div className="shoppingcart__item--price">
 								Subtotal: {(item.quantity * item.price).toFixed(2)}
 							</div>
@@ -48,9 +48,10 @@ const Cart = (props) => {
 							{numberOfProducts} produse
 						</span>
 						<span className="total-price--value">
-							{totalPrice.toFixed(2)}$
+							{totalPrice.toFixed(2)}RON
 						</span>
 					</div>
+					<button className="checkout-button" />
 				</div>}
 		</div>)
 }

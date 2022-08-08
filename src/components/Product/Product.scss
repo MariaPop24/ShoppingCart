@@ -3,10 +3,6 @@
 img.small {
   max-height: 8rem;
 }
-.row {
-  display: flex;
-  justify-content: space-between;
-}
 
 .product {
   margin: 1rem;
@@ -14,6 +10,8 @@ img.small {
   border: 1px solid;
   color: $color-pink;
   border: 0.2rem solid $color-pink;
+  text-align: center;
+  height: 15rem;
 }
 
 .add-to-cart-button {
