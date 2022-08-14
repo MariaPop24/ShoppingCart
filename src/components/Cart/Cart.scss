@@ -2,10 +2,10 @@
 
 .cart {
   margin: 4rem;
-  border: 0.2rem solid $color-pink;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 1rem;
   padding-bottom: 0;
-  color: $color-pink;
+  color: black;
   width: 50%;
   height: 20%;
 }
@@ -22,11 +22,10 @@
 
 .empty-cart {
   font-family: Arial, Helvetica, sans-serif;
-  color: $color-pink;
+  color: black;
   text-align: center;
   margin: 4rem;
   padding: 1rem;
-  color: $color-pink;
   width: 50%;
 }
 
@@ -47,20 +46,9 @@
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
   grid-template-columns: auto 1fr;
-  border-bottom: 0.05rem solid $color-pink;
+  border-bottom: 0.05rem solid $color-1;
   margin: 0;
   padding: 0.4rem 0rem;
-}
-
-.shoppingcart__button {
-  background-color: $color-light-pink;
-  color: $color-pink;
-  font-size: 1rem;
-  border: none;
-  text-align: center;
-  padding: 0.75rem;
-  margin: 0.5rem 0 0.5rem 0;
-  width: 100%;
 }
 
 .shoppingcart__title {
@@ -92,7 +80,7 @@
 }
 
 .shoppingcart__item--buttons {
-  background-color: $color-pink;
+  background-color: $color-2;
   color: white;
   font-size: 1rem;
   border: none;
@@ -104,7 +92,7 @@
 }
 
 .shoppingcart__item--buttons:hover {
-  background-color: $color-light-pink;
+  background-color: $color-1;
 }
 
 .shoppingcart__item--price {
@@ -116,7 +104,7 @@
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  border-top: 0.1rem solid $color-pink;
+  border-top: 0.1rem solid $color-1;
   padding: 0.5rem;
   width: 95.6%;
 }
@@ -131,7 +119,7 @@
 }
 
 .checkout-button {
-  background-color: $color-pink;
+  background-color: $color-2;
   color: white;
   border: none;
   padding: 0.5rem;
@@ -143,5 +131,5 @@
 }
 
 .checkout-button:hover {
-  background-color: $color-light-pink;
+  background-color: $color-1;
 }

@@ -1,7 +1,7 @@
 @import "../../styles/_global-colors.scss";
 
 nav {
-  background-color: $color-pink;
+  background-image: linear-gradient($color-1, $color-2);
   color: white;
   font-weight: bold;
   padding: 1rem;
